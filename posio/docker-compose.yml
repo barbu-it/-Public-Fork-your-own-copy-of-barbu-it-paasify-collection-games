@@ -2,6 +2,7 @@
 services:
   posio:
     image: littlestache/posio
+    restart: unless-stopped
     volumes:
         - $app_dir_data:/posio
     environment:
